@@ -1,8 +1,8 @@
-var express = require('express');
-var app = express();
-var db = require('./db');
+let express = require('express');
+let app = express();
+let db = require('./db');
 
-var UserController = require('./user/UserController');
+let UserController = require('./user/UserController');
 app.use('/users', UserController);
 
 module.exports = app;
