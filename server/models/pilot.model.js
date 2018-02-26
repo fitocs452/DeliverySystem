@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const Pilot = new mongoose.Schema({
+const PilotSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -35,4 +35,6 @@ const Pilot = new mongoose.Schema({
   }
 });
 
-export default mongoose.model('Pilot', Pilot);
+mongoose.model('Pilot', PilotSchema);
+
+module.exports = mongoose.model('Pilot');

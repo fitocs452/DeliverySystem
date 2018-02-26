@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const Package = new mongoose.Schema({
+const PackageSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -31,4 +31,7 @@ const Package = new mongoose.Schema({
   }
 });
 
-default mongoose.model('Package', Package);
+mongoose.model('Package', PackageSchema);
+
+module.exports = mongoose.model('Package');
+

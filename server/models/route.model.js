@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const Route = new mongoose.Schema({
+const RouteSchema = new mongoose.Schema({
   initialLocation: {
     type: String,
     required: true
@@ -41,4 +41,7 @@ const Route = new mongoose.Schema({
   }
 });
 
-export default mongoose.model('Route', Route);
+mongoose.model('Route', RouteSchema);
+
+module.exports = mongoose.model('Route');
+

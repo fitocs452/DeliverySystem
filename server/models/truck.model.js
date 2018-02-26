@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const Truck = new mongoose.Schema({
+const TruckSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -35,4 +35,6 @@ const Truck = new mongoose.Schema({
   }
 });
 
-export default mongoose.model('Truck', Truck);
+mongoose.model('Truck', TruckSchema);
+
+module.exports = mongoose.model('Truck');
