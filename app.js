@@ -6,7 +6,7 @@ let cors = require('cors')
 let UserController = require('./server/controllers/user.controller');
 let PackageController = require('./server/controllers/package.controller');
 let PilotController = require('./server/controllers/pilot.controller');
-let RouteController = require('./server/controllers/pilot.controller');
+let RouteController = require('./server/controllers/route.controller');
 let TruckController = require('./server/controllers/truck.controller');
 
 app.use(cors())

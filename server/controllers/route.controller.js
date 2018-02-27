@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
-var Route = require('../models/pilot.model');
+var Route = require('../models/route.model');
 
 // CREATES A NEW ROUTE
 router.post('/', function (req, res) {
